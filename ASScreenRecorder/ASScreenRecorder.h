@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 typedef void (^VideoCompletionBlock)(void);
 @protocol ASScreenRecorderDelegate;
 
@@ -49,5 +50,5 @@ typedef void (^VideoCompletionBlock)(void);
 // Then implement 'writeBackgroundFrameInContext:(CGContextRef*)contextRef'
 // use 'CGContextDrawImage' to draw your view into the provided CGContextRef
 @protocol ASScreenRecorderDelegate <NSObject>
-- (void)writeBackgroundFrameInContext:(CGContextRef*)contextRef;
+- (void)writeBackgroundFrameInContext:(CGContextRef *)contextRef;
 @end
